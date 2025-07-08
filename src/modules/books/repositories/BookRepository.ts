@@ -1,8 +1,7 @@
-import { Book, PrismaClient } from "@/generated/prisma";
+import { Book } from "@/generated/prisma";
+import prisma from "@/shared/database/prisma";
 
 export default function BookRepository() {
-  const prisma = new PrismaClient();
-
   return {
     create: async (data: Book) => {
       return prisma.book.create({ data });
