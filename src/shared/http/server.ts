@@ -5,7 +5,6 @@ import routes from "./routes";
 import dotenv from "dotenv";
 import prisma from "../database/prisma";
 import ErrorHandleMiddleware from "../middlewares/ErrorHandleMiddleware";
-import ValidationMiddlewares from "../middlewares/ValidationMiddlewares";
 
 dotenv.config();
 
