@@ -17,14 +17,14 @@ async function checkDatabaseConnection() {
     console.log("✅ Banco de dados conectado com sucesso!");
 
     // Em desenvolvimento, não executar query de teste para evitar conflitos
-    if (process.env.NODE_ENV !== "development") {
+    if (process.env.NODE_ENV !== "production") {
       const result = await prisma.$queryRaw`SELECT 1 as test`;
       console.log("✅ Query de teste executada com sucesso:", result);
     }
   } catch (error) {
     console.error("❌ Erro ao conectar com o banco de dados:", error);
     // Em desenvolvimento, encerrar o processo. Em produção, apenas logar o erro
-    if (process.env.NODE_ENV === "development") {
+    if (process.env.NODE_ENV === "production") {
       process.exit(1);
     }
   }

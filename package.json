@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/http/server.ts",
+    "dev": "cross-env NODE_ENV= ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/http/server.ts",
     "build": "npx prisma generate && npx tsc",
-    "start": "cross-env NODE_ENV=development ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/http/server.ts",
+    "start": "cross-env NODE_ENV=production ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/http/server.ts",
     "postinstall": "npx prisma generate"
   },
   "repository": {

@@ -9,7 +9,7 @@ declare global {
 let prisma: PrismaClient;
 
 // Em desenvolvimento, criar nova instância se não existir
-if (process.env.NODE_ENV === "development") {
+if (process.env.NODE_ENV === "production") {
   if (!global.prisma) {
     global.prisma = new PrismaClient();
   }
