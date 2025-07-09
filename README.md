@@ -1,3 +1,5 @@
+Para verificar o projeto funcionando Acesse o site: biblioteca-online-dnc.netlify.app
+
 # 📚 API de Gerenciamento de Livros
 
 Uma API RESTful desenvolvida em Node.js com TypeScript para gerenciamento de livros, construída com arquitetura modular e boas práticas de desenvolvimento.
@@ -228,7 +230,3 @@ Este projeto está sob a licença ISC. Veja o arquivo `LICENSE` para mais detalh
 **Vitor Oliveira**
 
 - GitHub: [@vitor-oliveiraf](https://github.com/vitor-oliveiraf)
-
-## 📞 Suporte
-
-Se você encontrar algum problema ou tiver dúvidas, abra uma issue no repositório.
