@@ -1,4 +1,4 @@
-Para verificar o projeto funcionando Acesse o site: biblioteca-online-dnc.netlify.app
+Acesse o projeto: [Biblioteca Online](https://biblioteca-online-dnc.netlify.app/)
 
 # 📚 API de Gerenciamento de Livros
 
