@@ -97,11 +97,11 @@ O servidor estará disponível em `http://localhost:3333`
 
 | Método   | Endpoint     | Descrição              |
 | -------- | ------------ | ---------------------- |
-| `POST`   | `/books`     | Criar um novo livro    |
-| `GET`    | `/books`     | Listar todos os livros |
-| `GET`    | `/books/:id` | Buscar livro por ID    |
-| `PUT`    | `/books/:id` | Atualizar livro        |
-| `DELETE` | `/books/:id` | Deletar livro          |
+| `POST`   | `/livros`     | Criar um novo livro    |
+| `GET`    | `/livros`     | Listar todos os livros |
+| `GET`    | `/livros/:id` | Buscar livro por ID    |
+| `PUT`    | `/livros/:id` | Atualizar livro        |
+| `DELETE` | `/livros/:id` | Deletar livro          |
 
 ### Health Check
 
@@ -174,9 +174,7 @@ curl -X DELETE http://localhost:3333/books/{id}
 ## 🔧 Scripts Disponíveis
 
 - `npm run dev` - Executa em modo desenvolvimento com hot-reload
-- `npm run build` - Compila o projeto TypeScript
-- `npm start` - Executa em modo produção
-- `npm run postinstall` - Gera o cliente Prisma após instalação
+- `npm run start` - Executa em modo produção
 
 ## 🏗️ Arquitetura
 
@@ -195,14 +193,6 @@ O projeto segue uma arquitetura modular com separação clara de responsabilidad
 - **AppError**: Classe personalizada para tratamento de erros
 - **ErrorHandleMiddleware**: Middleware global para captura de erros
 
-## 🔍 Debugging
-
-O projeto está configurado com debugging habilitado. Para conectar com o Chrome DevTools:
-
-1. Execute `npm run dev`
-2. Abra o Chrome e acesse `chrome://inspect`
-3. Clique em "Open dedicated DevTools for Node"
-
 ## 📦 Deploy
 
 ### Render
@@ -220,10 +210,6 @@ O projeto está configurado para deploy no Render com:
 3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
 4. Push para a branch (`git push origin feature/AmazingFeature`)
 5. Abra um Pull Request
-
-## 📄 Licença
-
-Este projeto está sob a licença ISC. Veja o arquivo `LICENSE` para mais detalhes.
 
 ## 👨‍💻 Autor
 
